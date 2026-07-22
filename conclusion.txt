@@ -1,0 +1,16 @@
+This project used Polynomial Regression (degree 3) to predict employee
+salaries based on their position level. The relationship between level
+and salary in this dataset is clearly non-linear, with salary rising
+slowly at junior levels and then increasing sharply at senior levels such
+as Partner, C-level, and CEO. A simple Linear Regression model would fit
+a straight line through the data, systematically underestimating salaries
+at both the lowest and highest levels while overestimating them in the
+middle. Polynomial Regression instead fits a curved line by adding
+higher-degree terms (Level^2, Level^3) of the input feature, allowing it
+to bend and follow the true shape of the data far more closely. The main
+advantage of Polynomial Regression for this dataset is its ability to
+model this curvature accurately without needing a completely different,
+more complex algorithm - it remains a linear model in terms of its
+coefficients, so it is easy to train and interpret while still capturing
+non-linear trends. Overall, Polynomial Regression proved to be a much
+better fit than Linear Regression for salary prediction on this dataset.
